@@ -53,7 +53,7 @@ class KitManager {
      * @throws KitException
      */
 	public function init(): void {
-		    $this->addKit(new StarterKit());
+	$this->addKit(new StarterKit());
         $this->addKit(new OnceKit());
         $this->addKit(new KnightKit());
         $this->addKit(new WizardKit());
@@ -68,7 +68,7 @@ class KitManager {
         $this->addKit(new ReaperKit());
         $this->addKit(new BanditKit());
         $this->addKit(new EnchanterKit());
-        $this->addKit(new SaintKit($this));
+        $this->addKit(new SaintKit());
         $this->addKit(new AssassinKit());
 	}
 
