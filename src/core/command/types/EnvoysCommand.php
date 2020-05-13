@@ -43,7 +43,7 @@ class EnvoysCommand extends Command {
             $time = $envoy->getTimeLeft();
             $lines[] = TextFormat::RED . "Envoy ($x, $y, $z): " . TextFormat::WHITE . gmdate("i:s", $time) .  " before despawn.";
         }
-        $sender->sendForm extends CustomForm {
+        $sender->sendForm extends (new class($lines) CustomForm {
 
             /**
              *  constructor.
