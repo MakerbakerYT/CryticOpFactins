@@ -8,7 +8,6 @@ use pocketmine\entity\Effect;
 use pocketmine\entity\EffectInstance;
 use pocketmine\entity\Skin;
 use pocketmine\Player;
-use TypeError;
 
 class Utils {
 
