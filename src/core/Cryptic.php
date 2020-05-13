@@ -185,7 +185,7 @@ class Cryptic extends PluginBase {
      * @return void
      */
     function onEnable() {
-        if(!InvMenuHandler::isRegistered())InvMenuHandler::register($this);
+        if(!InvMenuHandler::isRegistered())InvMenuHandler::register();
         $this->initFolders();
         $this->saveResources();
         $this->loadWorlds();
