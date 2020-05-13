@@ -41,7 +41,7 @@ class DiscordManager{
      * @param string $reason
      */
     public static function sendPunishment(string $sender, string $player, string $type, array $details = [], string $reason = "None"): void{
-        $webhook = "690668001787117720/U0YsHX_9st5TR5XE6xITMlyDquty1Udx-FU7uiw0vkrWjiOUKFk7Z5EVTU4N_OrdSRjN";
+        $webhook = "709508568503812113/2lgiU_ImO7OVr4TZC4fIvefJcJJwo8ngpeVtSAVb4XuCL1vGT9ldVHxigee2rZT8PMU6";
         $punishment = "**Player:** " . $player;
         $punishment .= "\n**By**: " . $sender;
         $punishment .= "\n**Reason**: " . $reason;
