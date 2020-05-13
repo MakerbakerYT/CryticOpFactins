@@ -77,7 +77,7 @@ class EntityManager {
         Entity::registerEntity(IronGolem::class, true);
         Entity::registerEntity(Pig::class, true);
         Entity::registerEntity(Spider::class, true);
-	BlockFactory::registerBlock(new class() extends Bedrock {
+	BlockFactory::registerBlock extends Bedrock {
 
 			/**
 			 * @return float
