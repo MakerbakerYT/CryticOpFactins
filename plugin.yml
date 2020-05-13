@@ -1,4 +1,5 @@
 name: CrypticFactions
+author: [Modded] MakerBakerYT
 main: core\Cryptic
 load: POSTWORLD
 version: "1.0.0"
