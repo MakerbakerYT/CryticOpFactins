@@ -35,7 +35,7 @@ use core\trade\TradeManager;
 use core\update\UpdateManager;
 use core\watchdog\WatchdogManager;
 use core\kit\KitManager;
-use core\libs\muqsit\invmenu\InvMenuHandler;
+use libs\muqsit\invmenu\InvMenuHandler;
 use Exception;
 use pocketmine\inventory\Inventory;
 use pocketmine\item\Item;
