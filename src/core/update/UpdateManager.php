@@ -55,10 +55,10 @@ class UpdateManager {
                 $scoreboard->setScoreLine(7, "");
             }
             if($scoreboard->getLine(8) === null) {
-                $scoreboard->setScoreLine(8, TextFormat::RESET . TextFormat::AQUA . "store.crypticpe.net");
+                $scoreboard->setScoreLine(8, TextFormat::RESET . TextFormat::AQUA . "Vote Link Coming Soon");
             }
             if($scoreboard->getLine(9) === null) {
-                $scoreboard->setScoreLine(9, TextFormat::RESET . TextFormat::AQUA . "vote.crypticpe.net");
+                $scoreboard->setScoreLine(9, TextFormat::RESET . TextFormat::AQUA . "BuyCraft Coming Soon");
             }
             return;
         }
