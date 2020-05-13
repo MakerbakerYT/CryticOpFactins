@@ -44,7 +44,7 @@ class LevelManager {
         BlockFactory::registerBlock(new LuckyBlock(), true);
         BlockFactory::registerBlock(new Hopper(), true);
         BlockFactory::registerBlock(new MonsterSpawner(), true);
-        BlockFactory::registerBlock(new class() extends RedstoneOre(), true);
+        BlockFactory::registerBlock(new RedstoneOre(), true);
 
             /**
              * @param Item $item
