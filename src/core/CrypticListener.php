@@ -153,7 +153,7 @@ class CrypticListener implements Listener
         if ($player->getCurrentTotalXp() < -0x80000000) {
             $player->setCurrentTotalXp(0);
         }
-        $this->core->getScheduler()->scheduleDelayedTask(new class($player) extends Task
+        $this->core->getScheduler()->scheduleDelayedTask(new class($player) extends Task {
         {
 
             /** @var CrypticPlayer */
