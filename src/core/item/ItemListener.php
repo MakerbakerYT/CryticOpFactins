@@ -467,7 +467,7 @@ class ItemListener implements Listener{
 					if($inventory instanceof ArmorInventory){
 						$holder = $inventory->getHolder();
 						if($holder instanceof CrypticPlayer){
-							$this->core->getScheduler()->scheduleDelayedTask(new class($holder) extends Task{
+							$this->core->getScheduler()->scheduleDelayedTask extends Task{
 
 								/** @var CrypticPlayer */
 								private $player;
