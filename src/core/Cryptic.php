@@ -324,32 +324,32 @@ class Cryptic extends PluginBase {
      */
 	function initVariables(): void {
         try {
-            $this->provider = new MySQLProvider($this);
-            $this->areaManager = new AreaManager($this);
-            $this->announcementManager = new AnnouncementManager($this);
-            $this->watchdogManager = new WatchdogManager($this);
-            $this->rankManager = new RankManager($this);
-            $this->factionManager = new FactionManager($this);
-            $this->entityManager = new EntityManager($this);
-            $this->combatManager = new CombatManager($this);
-            $this->levelManager = new LevelManager($this);
-            $this->updateManager = new UpdateManager($this);
-            $this->itemManager = new ItemManager($this);
-            $this->kitManager = new KitManager($this);
+            $this->provider = new MySQLProvider();
+            $this->areaManager = new AreaManager();
+            $this->announcementManager = new AnnouncementManager();
+            $this->watchdogManager = new WatchdogManager();
+            $this->rankManager = new RankManager();
+            $this->factionManager = new FactionManager();
+            $this->entityManager = new EntityManager();
+            $this->combatManager = new CombatManager();
+            $this->levelManager = new LevelManager();
+            $this->updateManager = new UpdateManager();
+            $this->itemManager = new ItemManager();
+            $this->kitManager = new KitManager();
             $this->tagManager = new TagManager();
-            $this->crateManager = new CrateManager($this);
-            $this->priceManager = new PriceManager($this);
-            $this->commandManager = new CommandManager($this);
-            $this->envoyManager = new EnvoyManager($this);
-            $this->questManager = new QuestManager($this);
-            $this->tradeManager = new TradeManager($this);
-            $this->gambleManager = new GambleManager($this);
-            $this->eventManager = new EventManager($this);
+            $this->crateManager = new CrateManager();
+            $this->priceManager = new PriceManager();
+            $this->commandManager = new CommandManager();
+            $this->envoyManager = new EnvoyManager();
+            $this->questManager = new QuestManager();
+            $this->tradeManager = new TradeManager();
+            $this->gambleManager = new GambleManager();
+            $this->eventManager = new EventManager();
             $this->mask = new MaskManager();
             $this->clearlag = new ClearLagManager();
             self::debug("Successfully loaded all server managers.");
         }catch (Exception $exception) {
-            self::debug("There was an unexpected error while attempting to initiate \"Cryptic.php\"'s variables.");
+		
         }
     }
 
