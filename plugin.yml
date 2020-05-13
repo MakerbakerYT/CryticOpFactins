@@ -1,5 +1,5 @@
 name: CrypticFactions
-author: [Modded] MakerBakerYT
+author: MakerBakerYT [Modded]
 main: core\Cryptic
 load: POSTWORLD
 version: "1.0.0"
