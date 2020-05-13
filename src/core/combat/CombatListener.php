@@ -147,7 +147,7 @@ class CombatListener implements Listener {
         if(!$player instanceof CrypticPlayer) {
             return;
         }
-        $this->core->getScheduler()->scheduleDelayedTask extends Task {
+        $this->core->getScheduler()->scheduleDelayedTask (new class($player, $spawn) extends Task {
 
             /** @var CrypticPlayer */
             private $player;
