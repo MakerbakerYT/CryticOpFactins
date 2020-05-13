@@ -10,6 +10,7 @@ use core\translation\Translation;
 use core\translation\TranslationException;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use libs\form\CustomForm;
 
 class ChangeLogCommand extends Command {
 
