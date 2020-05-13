@@ -438,13 +438,6 @@ class Cryptic extends PluginBase {
     }
 
     /**
-     * @return KitManager
-     */
-    function getKitManager(): KitManager {
-        return $this->kitManager;
-    }
-
-    /**
      * @return LevelManager
      */
     function getLevelManager(): LevelManager {
