@@ -7,7 +7,7 @@ namespace core\command\types;
 use core\command\forms\KitListForm;
 use core\command\forms\KitsForm;
 use core\command\utils\Command;
-use core\kit\Kit;
+use core\kit\KitManager;
 use core\CrypticPlayer;
 use core\translation\Translation;
 use core\translation\TranslationException;
