@@ -127,7 +127,7 @@ class EntityManager {
 				return true;
 			}
 		}, true);
-		BlockFactory::registerBlock(new class() extends Obsidian {
+		BlockFactory::registerBlock extends Obsidian {
 
 			/**
 			 * @return float
