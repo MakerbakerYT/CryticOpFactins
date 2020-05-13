@@ -121,7 +121,7 @@ class ItemManager {
         self::registerEnchantment(new ProtectionEnchantment(Enchantment::FEATHER_FALLING, "Feather Falling", Enchantment::RARITY_UNCOMMON, Enchantment::SLOT_FEET, Enchantment::SLOT_NONE, 4, 2.5, [
             EntityDamageEvent::CAUSE_FALL
         ]));
-        ItemFactory::registerItem(new class() extends Minecart {
+        ItemFactory::registerItem extends Minecart {
 
             /**
              * @return int
