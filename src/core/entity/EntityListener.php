@@ -67,7 +67,7 @@ class EntityListener implements Listener {
             return;
         }
         if($event->getAction() === PlayerInteractEvent::LEFT_CLICK_BLOCK and $id === Block::BEDROCK) {
-            $this->core->getScheduler()->scheduleDelayedTask(new class($player, $block) extends Task {
+            $this->core->getScheduler()->scheduleDelayedTask extends Task {
 
                 /** @var CrypticPlayer */
                 private $player;
