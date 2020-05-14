@@ -185,7 +185,7 @@ class CombatListener implements Listener {
      */
     public function onPlayerDeath(PlayerDeathEvent $event): void {
         $player = $event->getPlayer();
-    public function onPlayerMove(PlayerMoveEvent $event): void {
+    if(!$player instanceof CrypticPlayer) {
             return;
         }
         $event->setDrops([(new Drops($player->getName(), $event->getDrops()))->getItemForm()]);
