@@ -41,7 +41,7 @@ class SetTagCommand extends Command {
             $sender->sendMessage("§l§8(§6!§8)§r §7Usage: /settag <player> <tag>§r");
             return;
         }
-        if(!$player = Server::getInstance()->getPlayer($args[0])){
+        if(!$player === Server::getInstance()->getPlayer($args[0])){
             $sender->sendMessage("§l§8(§c!§8)§r §7That player cannot be found.§r");
             return;
         }
