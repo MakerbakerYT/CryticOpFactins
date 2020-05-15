@@ -53,6 +53,6 @@ class GiveNoteCommand extends Command {
         $p->getInventory()->addItem($item);
         $sender->sendMessage("§l§8(§a!§8)§r §7You've successfully given the tag, §a" . $args[1] . "§7.§r");
         $sender->sendMessage("§l§8(§a!§8)§r §7You've been given the tag, §a" . $args[1] . "§7.§r");
-        return;
+        
     }
 }
