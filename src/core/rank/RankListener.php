@@ -89,7 +89,7 @@ class RankListener implements Listener{
 			$allies = $faction->getAllies();
 			$onlinePlayers = $faction->getOnlineMembers();
 			foreach($allies as $ally){
-				if(($ally = $this->core->getFactionManager()->getFaction($ally)) === null){
+				if(($ally === $this->core->getFactionManager()->getFaction($ally)) === null){
 					continue;
 				}
 				$onlinePlayers = array_merge($ally->getOnlineMembers(), $onlinePlayers);
