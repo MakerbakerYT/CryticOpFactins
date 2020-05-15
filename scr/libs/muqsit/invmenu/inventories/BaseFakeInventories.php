@@ -17,12 +17,12 @@
  *
 */
 
-namespace core\libs\muqsit\invmenu\inventories;
+namespace libs\muqsit\invmenu\inventories;
 
-use core\libs\muqsit\invmenu\InvMenu;
-use core\libs\muqsit\invmenu\InvMenuHandler;
-use core\libs\muqsit\invmenu\tasks\DelayedFakeBlockDataNotifyTask;
-use core\libs\muqsit\invmenu\utils\HolderData;
+use libs\muqsit\invmenu\InvMenu;
+use libs\muqsit\invmenu\InvMenuHandler;
+use libs\muqsit\invmenu\tasks\DelayedFakeBlockDataNotifyTask;
+use libs\muqsit\invmenu\utils\HolderData;
 
 use pocketmine\block\Block;
 use pocketmine\inventory\BaseInventory;
@@ -84,7 +84,7 @@ abstract class BaseFakeInventory extends ContainerInventory{
 	}
 
 	final public function onClose(Player $player) : void{
-		if(isset($this->holder_data[$id = $player->getId()])){
+		if(isset($this->holder_data[$id === $player->getId()])){
 			$pos = $this->holder_data[$id]->position;
 			if($player->getLevel()->isChunkLoaded($pos->x >> 4, $pos->z >> 4)){
 				$this->sendRealBlockData($player, $this->holder_data[$id]);
