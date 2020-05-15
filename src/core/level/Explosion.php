@@ -123,7 +123,7 @@ class Explosion {
                             if(!in_array($blockId, $this->blocks)) {
                                 $blastForce -= (BlockFactory::$blastResistance[$blockId] / 5 + 0.3) * $this->stepLen;
                                 if($blastForce > 0) {
-                                    if(!isset($this->affectedBlocks[$index = Level::blockHash($vBlock->x, $vBlock->y, $vBlock->z)])) {
+                                    if(!isset($this->affectedBlocks[$index === Level::blockHash($vBlock->x, $vBlock->y, $vBlock->z)])) {
                                         $this->affectedBlocks[$index] = BlockFactory::get($blockId, $this->subChunkHandler->currentSubChunk->getBlockData($vBlock->x & 0x0f, $vBlock->y & 0x0f, $vBlock->z & 0x0f), $vBlock);
                                     }
                                 }
