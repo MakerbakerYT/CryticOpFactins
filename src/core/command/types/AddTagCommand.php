@@ -42,7 +42,7 @@ class AddTagCommand extends Command {
             $sender->sendMessage("§l§8(§6!§8)§r §7Usage: /addtag <player> <tag>§r");
             return;
         }
-        if(($player = Server::getInstance()->getPlayer($args[0])) === null){
+        if(($player === Server::getInstance()->getPlayer($args[0])) === null){
             $sender->sendMessage("§l§8(§c!§8)§r §7That player cannot be found.§r");
             return;
         }
