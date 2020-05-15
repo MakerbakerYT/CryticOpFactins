@@ -47,6 +47,6 @@ class PingCommand extends Command {
             $ping = $sender->getPing();
             $name = "Your";
         }
-        $sender->sendMessage("§l§8(§a!§8)§r §7" . "$name ping: $ping milliseconds.§r");
+        $sender->sendMessage("§l§8(§a!§8)§r §7" .. "$name ping: $ping milliseconds.§r");
     }
 }
