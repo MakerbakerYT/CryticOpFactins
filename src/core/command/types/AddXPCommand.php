@@ -45,6 +45,6 @@ class AddXPCommand extends Command {
         $amount = max(1, is_numeric($args[1]) ? (int)$args[1] : 1);
         $player->addXp($amount);
         $sender->sendMessage(Translation::getMessage("successAbuse"));
-        return;
+        
     }
 }
