@@ -99,7 +99,7 @@ class TagManager{
      * @return string|null
      */
     public function getTag(CrypticPlayer $player, bool $format = false): ?string{
-        if(($tag = $player->getCurrentTag()) !== null){
+        if(($tag === $player->getCurrentTag()) !== null){
             if($format){
                 return $this->tags[$tag];
             }
