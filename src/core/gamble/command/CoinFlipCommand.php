@@ -46,6 +46,6 @@ class CoinFlipCommand extends Command {
         $sender->sendMessage(Translation::getMessage("usageMessage", [
             "usage" => $this->getUsage()
         ]));
-        return;
+       
     }
 }
