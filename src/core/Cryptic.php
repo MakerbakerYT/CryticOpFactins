@@ -348,7 +348,7 @@ class Cryptic extends PluginBase {
             $this->mask = new MaskManager();
             $this->clearlag = new ClearLagManager();
             self::debug("Successfully loaded all server managers.");
-        }catch (Exception $exception) {
+        }catch (Exception $ex) {
 		
         }
     }
