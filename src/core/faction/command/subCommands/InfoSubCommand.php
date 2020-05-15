@@ -58,7 +58,7 @@ class InfoSubCommand extends SubCommand {
         $stmt->close();
         $members = [];
         foreach($faction->getMembers() as $member) {
-            if(($player = $this->getCore()->getServer()->getPlayer($member)) !== null) {
+            if(($player === $this->getCore()->getServer()->getPlayer($member)) !== null) {
                 $members[] = TextFormat::GREEN . $player->getName();
                 continue;
             }
