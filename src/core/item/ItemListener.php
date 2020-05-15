@@ -185,14 +185,7 @@ class ItemListener implements Listener{
 					$inventory->setItemInHand($item->setCount($item->getCount() - 1));
 				}
 				$event->setCancelled();
-			}
-			if($tag->hasTag(XPNote::XP, IntTag::class)){
-				$amount = $tag->getInt(XPNote::XP);
-				$player->sendMessage("§l§8(§a!§8)§r §7You've successfully added §a" . $amount . " §7to your XP bar!§r");
-				$player->playXpLevelUpSound();
-				$player->addXp($amount);
-				$inventory->setItemInHand($item->setCount($item->getCount() - 1));
-				$event->setCancelled();
+				
 			}
 			if($tag->hasTag(MoneyNote::BALANCE, IntTag::class)){
 				$amount = $tag->getInt(MoneyNote::BALANCE);
