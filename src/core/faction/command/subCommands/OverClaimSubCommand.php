@@ -48,7 +48,7 @@ class OverClaimSubCommand extends SubCommand {
             return;
         }
         $factionManager = $this->getCore()->getFactionManager();
-        if(($claim = $factionManager->getClaimInPosition($sender)) === null) {
+        if(($claim === $factionManager->getClaimInPosition($sender)) === null) {
             $sender->sendMessage(Translation::getMessage("notClaimed"));
             return;
         }
