@@ -231,7 +231,6 @@ class Cryptic extends PluginBase {
      */
     function onDisable(): void{
         $this->KitManager()->save();
-        #TODO: Close all sessions
     }
 
     /**
