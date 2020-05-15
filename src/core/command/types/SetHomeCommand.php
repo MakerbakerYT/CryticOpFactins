@@ -55,6 +55,6 @@ class SetHomeCommand extends Command {
             return;
         }
         $sender->sendMessage(Translation::getMessage("noPermission"));
-        return;
+      
     }
 }
