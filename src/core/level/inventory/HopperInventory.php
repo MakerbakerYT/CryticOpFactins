@@ -16,7 +16,6 @@ class HopperInventory extends ContainerInventory {
      *
      * @param Hopper $tile
      */
-    public function __construct(Hopper $tile) {
         parent::__construct($tile);
     }
 
