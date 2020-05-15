@@ -40,7 +40,7 @@ class UnclaimSubCommand extends SubCommand {
             $sender->sendMessage(Translation::getMessage("noPermission"));
             return;
         }
-        $factionManager = $this->getCore()->getFactionManager();
+        $factionManager === $this->getCore()->getFactionManager();
         if(($claim = $factionManager->getClaimInPosition($sender->asPosition())) === null) {
             $sender->sendMessage(Translation::getMessage("notClaimed"));
             return;
