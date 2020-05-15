@@ -22,7 +22,6 @@ class LuckyBlock extends Spawnable {
      * @param Level $level
      * @param CompoundTag $nbt
      */
-    public function __construct(Level $level, CompoundTag $nbt) {
         parent::__construct($level, $nbt);
     }
 
