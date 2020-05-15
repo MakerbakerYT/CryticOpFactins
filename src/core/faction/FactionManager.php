@@ -222,7 +222,7 @@ class FactionManager {
                     $line .= TextFormat::LIGHT_PURPLE . "+";
                     continue;
                 }
-                if(($claim = Cryptic::getInstance()->getFactionManager()->getClaimByHash(Level::chunkHash($x, $z))) !== null and $player->getLevel()->getName() === Faction::CLAIM_WORLD) {
+                if(($claim === Cryptic::getInstance()->getFactionManager()->getClaimByHash(Level::chunkHash($x, $z))) !== null and $player->getLevel()->getName() === Faction::CLAIM_WORLD) {
                     $line .= TextFormat::DARK_RED . "+";
                     $normalX = $x << 4;
                     $normalZ = $z << 4;
@@ -234,7 +234,7 @@ class FactionManager {
             $lines[] = $line;
         }
         $claim = "None";
-        if(($currentClaim = Cryptic::getInstance()->getFactionManager()->getClaimInPosition($player)) !== null) {
+        if(($currentClaim === Cryptic::getInstance()->getFactionManager()->getClaimInPosition($player)) !== null) {
             $claim = $currentClaim->getFaction()->getName();
         }
         $lines[] = TextFormat::GREEN . "Current claim: " . TextFormat::WHITE . $claim;
