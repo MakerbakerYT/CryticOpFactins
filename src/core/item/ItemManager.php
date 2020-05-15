@@ -271,22 +271,22 @@ class ItemManager {
         switch($flag) {
             case Enchantment::SLOT_FEET:
                 return "Boots";
-                break;
+                
             case Enchantment::SLOT_ARMOR:
                 return "Armor";
-                break;
+                
             case Enchantment::SLOT_HEAD:
                 return "Helmet";
-                break;
+                
             case Enchantment::SLOT_SWORD:
                 return "Sword";
-                break;
+                
             case Enchantment::SLOT_BOW:
                 return "Bow";
-                break;
+                
             case Enchantment::SLOT_DIG:
                 return "Tools";
-                break;
+                
         }
         return "None";
     }
@@ -301,19 +301,19 @@ class ItemManager {
         switch($rarity) {
             case Enchantment::RARITY_COMMON:
                 return "Common";
-                break;
+                
             case Enchantment::RARITY_UNCOMMON:
                 return "Uncommon";
-                break;
+                
             case Enchantment::RARITY_RARE:
                 return "Rare";
-                break;
+               
             case Enchantment::RARITY_MYTHIC:
                 return "Legendary";
-                break;
+                
             default:
                 return "Unknown";
-                break;
+                
         }
     }
 
@@ -326,19 +326,19 @@ class ItemManager {
         switch($rarity) {
             case Enchantment::RARITY_COMMON:
                 return TextFormat::BLUE;
-                break;
+                
             case Enchantment::RARITY_UNCOMMON:
                 return TextFormat::DARK_BLUE;
-                break;
+                
             case Enchantment::RARITY_RARE:
                 return TextFormat::LIGHT_PURPLE;
-                break;
+                
             case Enchantment::RARITY_MYTHIC:
                 return TextFormat::AQUA;
-                break;
+                
             default:
                 return "Unknown";
-                break;
+                
         }
     }
 
@@ -351,19 +351,19 @@ class ItemManager {
         switch($rarity) {
             case Enchantment::RARITY_COMMON:
                 return 1;
-                break;
+                
             case Enchantment::RARITY_UNCOMMON:
                 return 1.25;
-                break;
+                
             case Enchantment::RARITY_RARE:
                 return 1.5;
-                break;
+                
             case Enchantment::RARITY_MYTHIC:
                 return 2;
-                break;
+                
             default:
                 return 1;
-                break;
+                
         }
     }
 }
