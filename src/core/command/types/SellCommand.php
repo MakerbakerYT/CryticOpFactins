@@ -67,7 +67,7 @@ class SellCommand extends Command {
                         "price" => TextFormat::LIGHT_PURPLE . "$" . $price,
                     ]));
                     return;
-                    break;
+                    
                 case "all":
                     $content = $sender->getInventory()->getContents();
                     /** @var Item[] $items */
@@ -112,7 +112,7 @@ class SellCommand extends Command {
                     }
                     $sender->addToBalance($price);
                     return;
-                    break;
+                    
                 case "auto":
                     if($sender->hasPermission("permission.tier3")) {
                         $sender->setAutoSelling(!$sender->isAutoSelling());
@@ -129,6 +129,6 @@ class SellCommand extends Command {
             return;
         }
         $sender->sendMessage(Translation::getMessage("noPermission"));
-        return;
+        
     }
 }
