@@ -76,6 +76,6 @@ class AlchemistConfirmationForm2 extends ModalForm {
                 return;
             }
         }
-        return;
+       
     }
 }
