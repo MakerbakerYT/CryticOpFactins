@@ -41,6 +41,6 @@ class NickCommand extends Command {
         }
         $sender->setDisplayName($name);
         $sender->sendMessage(TextFormat::AQUA . "You name has been set to " . TextFormat::YELLOW . $name);
-        return;
+       
     }
 }
