@@ -36,7 +36,7 @@ class CustomPotionCommand extends Command {
             return;
         }
         if(isset($args[0])){
-            if(!$player = $sender->getServer()->getPlayer($args[0])){
+            if(!$player === $sender->getServer()->getPlayer($args[0])){
                 $sender->sendMessage("§l§8(§c!§8)§r §7That player does not exist!§r");
                 return;
             }
