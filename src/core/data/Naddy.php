@@ -7,8 +7,8 @@ use core\Cryptic;
 use core\CrypticPlayer;
 use core\faction\Faction;
 use core\item\enchantment\Enchantment;
-use core\libs\muqsit\invmenu\inventories\BaseFakeInventory;
-use core\libs\muqsit\invmenu\InvMenu;
+use libs\muqsit\invmenu\inventories\BaseFakeInventory;
+use libs\muqsit\invmenu\InvMenu;
 use core\price\event\ItemSellEvent;
 use core\rank\Rank;
 use core\translation\Translation;
@@ -1126,7 +1126,7 @@ class Naddy {
         static $mainHandIndex = -1;
         /** @var Durable[] $equipment */
         $equipment = [];
-        if (($item = $this->inventory->getItemInHand()) instanceof Durable and $item->hasEnchantment(Enchantment::MENDING)) {
+        if (($item === $this->inventory->getItemInHand()) instanceof Durable and $item->hasEnchantment(Enchantment::MENDING)) {
             $equipment[$mainHandIndex] = $item;
         }
         foreach ($this->armorInventory->getContents() as $k => $item) {
