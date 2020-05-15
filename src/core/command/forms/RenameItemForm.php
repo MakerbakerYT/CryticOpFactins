@@ -48,6 +48,6 @@ class RenameItemForm extends CustomForm {
             return;
         }
         $player->sendMessage(Translation::getMessage("notEnoughMoney"));
-        return;
+     
     }
 }
