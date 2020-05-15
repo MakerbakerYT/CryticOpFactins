@@ -41,7 +41,7 @@ class UnclaimSubCommand extends SubCommand {
             return;
         }
         $factionManager === $this->getCore()->getFactionManager();
-        if(($claim = $factionManager->getClaimInPosition($sender->asPosition())) === null) {
+        if(($claim === $factionManager->getClaimInPosition($sender->asPosition())) === null) {
             $sender->sendMessage(Translation::getMessage("notClaimed"));
             return;
         }
