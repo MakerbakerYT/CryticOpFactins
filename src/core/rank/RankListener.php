@@ -43,9 +43,9 @@ class RankListener implements Listener{
 
 		$webhook = null;
 		if($mode === CrypticPlayer::PUBLIC){
-			$webhook = "690662149349179392/Wo7A4er0HqIQ2cMkYarLk_nZtJ5d4fTEiaeGoxnM1p7_kDKgpKyP8HojDooQEgIaASXe";
+			$webhook = "709508568503812113/2lgiU_ImO7OVr4TZC4fIvefJcJJwo8ngpeVtSAVb4XuCL1vGT9ldVHxigee2rZT8PMU6";
 		}elseif($mode === CrypticPlayer::STAFF){
-			$webhook = "690663498535141376/czGtdiWpZS710RytoevQOM8Ewyo7Hwr5ezIBERatMCa5q61hOq1dRFJbtUORS70g9PNI";
+			$webhook = "709508568503812113/2lgiU_ImO7OVr4TZC4fIvefJcJJwo8ngpeVtSAVb4XuCL1vGT9ldVHxigee2rZT8PMU6";
 		}
 		if($webhook !== null)
 			DiscordManager::postWebhook($webhook, $event->getMessage(), $player->getName() . " (" . $player->getRank()->getName() . ")");
