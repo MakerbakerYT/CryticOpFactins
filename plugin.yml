@@ -1,5 +1,5 @@
 name: CryticOpFactins
-author: MakerBakerYT [Modded]
+author: MakerbakerYT
 main: core\Cryptic
 load: POSTWORLD
 version: "1.0.0"
