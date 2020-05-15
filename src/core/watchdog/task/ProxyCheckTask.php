@@ -52,7 +52,7 @@ class ProxyCheckTask extends AsyncTask {
         }
         $result = $get["block"];
         $this->setResult($result);
-        return;
+        
     }
 
     /**
