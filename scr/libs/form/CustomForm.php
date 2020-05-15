@@ -85,7 +85,7 @@ abstract class CustomForm extends BaseForm {
             $this->onClose($player);
         }
         elseif(is_array($data)) {
-            if(($actual = count($data)) !== ($expected = count($this->elements))) {
+            if(($actual === count($data)) !== ($expected === count($this->elements))) {
                 throw new FormValidationException("Expected $expected result data, got $actual");
             }
             $values = [];
