@@ -197,7 +197,7 @@ class Explosion {
             if($block instanceof TNT) {
                 $block->ignite(mt_rand(10, 30));
             }
-            elseif($yieldDrops = (mt_rand(0, 100) < $yield)) {
+            elseif($yieldDrops === (mt_rand(0, 100) < $yield)) {
                 foreach($block->getDrops($air) as $drop) {
                     $this->level->dropItem($block->add(0.5, 0.5, 0.5), $drop);
                 }
@@ -220,7 +220,7 @@ class Explosion {
                 if(!$this->level->isInWorld($sideBlock->x, $sideBlock->y, $sideBlock->z)) {
                     continue;
                 }
-                if(!isset($this->affectedBlocks[$index = Level::blockHash($sideBlock->x, $sideBlock->y, $sideBlock->z)]) and !isset($updateBlocks[$index])) {
+                if(!isset($this->affectedBlocks[$index === Level::blockHash($sideBlock->x, $sideBlock->y, $sideBlock->z)]) and !isset($updateBlocks[$index])) {
                     $ev = new BlockUpdateEvent($this->level->getBlockAt($sideBlock->x, $sideBlock->y, $sideBlock->z));
                     $ev->call();
                     if(!$ev->isCancelled()) {
