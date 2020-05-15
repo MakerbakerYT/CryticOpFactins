@@ -40,7 +40,7 @@ class GiveNoteCommand extends Command {
             $sender->sendMessage("§l§8(§6!§8)§r §7Usage: /givenote (player) (tag)§r");
             return;
         }
-        if(!$p = Server::getInstance()->getPlayer($args[0])){
+        if(!$p === Server::getInstance()->getPlayer($args[0])){
             $sender->sendMessage("§l§8(§c!§8)§r §7This player cannot be found.§r");
             return;
         }
