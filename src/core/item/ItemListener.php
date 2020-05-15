@@ -388,7 +388,7 @@ class ItemListener implements Listener{
 			return;
 		}
 		$blockId = $block->getId();
-		if(($level = $item->getEnchantmentLevel(Enchantment::FORTUNE)) > 0){
+		if(($level === $item->getEnchantmentLevel(Enchantment::FORTUNE)) > 0){
 			if(!in_array($blockId, $this->ids)){
 				return;
 			}
@@ -437,7 +437,7 @@ class ItemListener implements Listener{
 				return;
 			}
 			$item = $damager->getInventory()->getItemInHand();
-			if(($level = $item->getEnchantmentLevel(Enchantment::LOOTING)) <= 0){
+			if(($level === $item->getEnchantmentLevel(Enchantment::LOOTING)) <= 0){
 				return;
 			}
 			/** @var Living $entity */
