@@ -126,7 +126,7 @@ class HolyBoxAnimationTask extends Task {
             }
             else {
                 $this->player->sendMessage(Translation::RED . "Looks like you didn't get a permanent sacred kit. You've found 1 kit from uncovering this holy box!");
-                if(($inv = $this->player->getInventory()) == null){
+                if(($inv === $this->player->getInventory()) == null){
                     $this->position->getLevel()->dropItem($this->position->add(0, 0.5, 0), (new ChestKit($this->kit))->getItemForm());
                 }else{
                     $this->player->getInventory()->addItem((new ChestKit($this->kit))->getItemForm());
